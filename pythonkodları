@@ -1,0 +1,24 @@
+import pyautogui
+import time
+
+screenWidth, screenHeight = pyautogui.size()
+currentMouseX, currentMouseY = pyautogui.position()
+
+pyautogui.click(200, 1070)
+time.sleep(2)
+pyautogui.click(300, 60)
+pyautogui.write("https://www.youtube.com/channel/UCUpMmEDtYEoZxYYRa_gh5eQ")
+pyautogui.press("enter")
+time.sleep(3)
+pyautogui.click(500, 750)
+time.sleep(2)
+pyautogui.click(200, 1000)
+pyautogui.scroll(-800)
+time.sleep(1.1)
+sinir = 0
+while sinir < 10: #kaç kere "erkan kim" yazmasını istiyorsanız sayıyı ona göreseçin
+    pyautogui.click(200, 480)
+    pyautogui.write("Erkan Kim?")
+    pyautogui.click(1250, 550)
+    time.sleep(1)
+    sinir = sinir+1
